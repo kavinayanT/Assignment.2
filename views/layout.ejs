@@ -1,0 +1,36 @@
+<!-- views/layout.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %> - My Portfolio</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+  <!-- Header: Navigation Bar -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About Me</a></li>
+        <li><a href="/projects">Projects</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content (This will be replaced with page-specific content) -->
+  <main>
+    <%- body %>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>Find me on <a href="https://github.com/yourusername">GitHub</a> | <a href="https://www.linkedin.com/in/yourname">LinkedIn</a></p>
+  </footer>
+
+</body>
+</html>
