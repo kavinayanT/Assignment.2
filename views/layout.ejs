@@ -1,36 +1,36 @@
-<!-- views/layout.ejs -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><%= title %> - My Portfolio</title>
-  <link rel="stylesheet" href="/css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %> - Portfolio</title>
+    <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About Me</a></li>
+                <li><a href="/projects">Projects</a></li>
+                <li><a href="/contact">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <!-- Header: Navigation Bar -->
-  <header>
-    <nav>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About Me</a></li>
-        <li><a href="/projects">Projects</a></li>
-        <li><a href="/contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <!-- Main Content (Page-specific content will be injected here) -->
+    <main>
+        <%- body %>
+    </main>
 
-  <!-- Main Content (This will be replaced with page-specific content) -->
-  <main>
-    <%- body %>
-  </main>
-
-  <!-- Footer -->
-  <footer>
-    <p>Find me on <a href="https://github.com/yourusername">GitHub</a> | <a href="https://www.linkedin.com/in/yourname">LinkedIn</a></p>
-  </footer>
-
+    <!-- Footer Section -->
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+        </div>
+        <p>&copy; 2024 Kavinyan Thayananthakumar. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
